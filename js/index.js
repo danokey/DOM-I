@@ -1,4 +1,8 @@
 const siteContent = {
+
+// const navigation = document.querySelector('.container header nav');
+
+
   "nav": {
     "nav-item-1": "Services",
     "nav-item-2": "Product",
@@ -40,3 +44,61 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let mainImg = document.getElementById("middle-img");
+mainImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+const navItems = document.querySelectorAll('a');
+navItems[0].textContent = 'Services';
+navItems[1].textContent = 'Product';
+navItems[2].textContent = 'Vision';
+navItems[3].textContent = 'Features';
+navItems[4].textContent = 'About';
+navItems[5].textContent = 'Contact';
+
+const hOne = document.querySelector('h1');
+hOne.textContent = 'DOM is awesome';
+
+const btn = document.querySelector('button');
+btn.textContent = 'Get Started';
+
+const hFour = document.querySelectorAll('h4');
+hFour[0].textContent = 'Features';
+hFour[1].textContent = 'About';
+hFour[2].textContent = 'Services';
+hFour[3].textContent = 'Product';
+hFour[4].textContent = 'Vision';
+hFour[5].textContent = 'Contact';
+
+const content = document.querySelectorAll('p');
+content[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+content[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+content[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+content[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+content[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+content[5].textContent = "123 Way 456 Street Somewhere, USA"
+content[6].textContent = "1 (888) 888-8888"
+content[7].textContent = "sales@greatidea.io"
+content[8].textContent = "Copyright Great Idea! 2018"
+
+// const features = document.querySelector('features-h4');
+// features.textContent = 'Features';
+
+// const about = document.querySelector('.top-content h4');
+// about.textContent = 'About';
+
+// const navItem1 = document.querySelector(".nav-item-1");
+// navItem1.setAttribute('src', "img/logo.png")
+
+// const navigation1 = document.querySelector('.nav-item-1');
+// navigation1.setAttribute('src', "Services")
+
+// nav-item-1.textContent = 'Services';
+
+
+// const footie = document.querySelector('.footer');
+
+// footie.textContent = "Copyright Great Idea! 2018"
